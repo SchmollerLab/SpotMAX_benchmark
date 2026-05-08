@@ -19,7 +19,8 @@ def run(
         save_to_images_path=True, 
         return_final_df=False,
         df_coords_endname='',
-        threshold=0.5
+        threshold=0.5,
+        **kwargs
     ):
     # Load the Piscis model.
     if torch.cuda.is_available():

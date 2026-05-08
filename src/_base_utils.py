@@ -3,8 +3,12 @@ import os
 import cellacdc.myutils as acdc_myutils
 
 src_path = os.path.dirname(os.path.abspath(__file__))
-data_path = os.path.join(os.path.dirname(src_path), 'data')
+project_path = os.path.dirname(src_path)
+data_path = os.path.join(project_path, 'data')
 spotmax_gt_dataset_path = os.path.join(data_path, 'SpotMAX_gt_dataset')
+spotiflow_trained_models = os.path.join(
+    project_path, 'spotiflow_trained_models'
+)
 
 def get_basename(images_path):
     valid_files = acdc_myutils.listdir(images_path)

@@ -96,7 +96,8 @@ def run(
         save_to_images_path=True, 
         return_final_df=False,
         df_coords_endname='',
-        threshold_percentage=None
+        threshold_percentage=None,
+        **kwargs
     ):
     pbar = tqdm(total=len(input_files), ncols=100)
     for files in input_files:
